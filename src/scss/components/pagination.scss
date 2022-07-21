@@ -1,0 +1,23 @@
+.footer__pagination {
+   padding: 0 0 30px 120px;
+}
+.footer__pagination__flex {
+   display: flex;
+   width: 80px;
+   justify-content: space-between;
+}
+.footer__pagination__button {
+   width: 35px;
+   height: 35px;
+   border-radius: 20px;
+   border: 2px solid #FE5F1E;
+   color: #FE5F1E;
+   cursor: pointer;
+   &:hover {
+      background-color: #FE5F1E;
+      color: white;
+   }
+}
+.pagination__text {
+   margin: 10px 12px;
+}

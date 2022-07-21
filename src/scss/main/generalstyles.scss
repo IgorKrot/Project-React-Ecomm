@@ -1,0 +1,30 @@
+@import "./stylenull.scss";
+@import "./fonts.scss";
+@import "../components/allcomponentsstyle.scss";
+
+body {
+	max-width: 100%;
+	background-color: #c0c0c0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+	background-color: #FFDF8C;
+	max-width: 1500px;
+	margin: 0px auto;
+	padding: 50px;
+}
+
+.content {
+	max-width: 1400px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+}
+
+h1 {
+   font-size: 2em;
+   font-weight: 700;
+   text-align: left;
+   padding: 0 70px 0 70px;
+   height: 50px;
+   }
