@@ -1,12 +1,10 @@
 import React from 'react';
-
-import NotFoundscss from '../scss/components/modules/NotFoundscss.module.scss';
-
             
 function Thanksfororder() {
    return (           
-      <div className={NotFoundscss.Notfound}>   
-         <div className={NotFoundscss.header}>&#128512;<br></br>thanks for order</div>
+      <div className="Thanksfororder_head">   
+         <div className="Thanksfororder_body">&#128512;</div>
+         <div className="Thanksfororder_body__text">Thanks Bro. Pizza delaet dobro.</div>
       </div>   
   );
 }

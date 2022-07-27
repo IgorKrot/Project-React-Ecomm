@@ -5,16 +5,34 @@
 	font-weight: 700;
 	text-align: center;
 	position: relative;
+   @media (max-width: 639px) {
+      padding: 0;
+      height: 80px;
+   }
 }
 .nav__flex {
 	display: flex;
 	justify-content: space-between;
+   @media (max-width: 639px) {
+      flex-direction: column;
+   }
 }
 .nav__category__flex {
 	display: flex;
 	flex-wrap: wrap;
 	width: 60%;
-	justify-content: space-evenly;
+	// justify-content: space-evenly;
+   cursor: pointer;
+   @media (min-width: 640px) and (max-width: 768px) {
+   overflow-x: scroll;
+   flex-wrap: nowrap;
+   }
+   @media (max-width: 639px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      width: 200px;
+      margin: 5px 5px;
+   }
 }
 
 .nav__categories {
@@ -23,6 +41,12 @@
 	background-color: #F9F9F9;
 	padding: 10.5px 30px;
    cursor: pointer;
+   transition-duration: 1s;
+   margin: 3px 0 0 0;
+   &:hover{
+      background-color: #FE5F1E;
+      color: #F9F9F9;
+   }
 }
 
 .nav__categories__text {
@@ -33,6 +57,12 @@
 	display: flex;
 	justify-content: flex-end;
 	padding: 10.5px 0 10.5px 30px;
+   @media (max-width: 639px) {
+      padding: 0;
+      width: 200px;
+      margin: 10px auto;
+      justify-content: center;
+   }
    
 }
 .nav__sort__img {
@@ -41,14 +71,26 @@
 	height: 14px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+   @media (max-width: 639px) {
+      display: none;
+   }
 }
 .nav__sort__text {
 	margin: 0 0 0 5px;
+   @media (max-width: 639px) {
+      font-size: 0.8em;
+   }
 }
 .nav__sort__menu {
 	margin: 0 0 0 5px;
 	color: #FE5F1E;
    cursor: pointer;
+   transition-duration: 1s;
+   &:hover {
+      color: black;}
+   @media (max-width: 639px) {
+      font-size: 0.6em;
+   }
 }
 
 
@@ -80,7 +122,8 @@
 }
 
 .activecategory {
-   background-color: #808080;
+   background-color: #FE5F1E;
+   color: #F9F9F9;
 }
 .activesort {
    background: #FE5F1E0D;
