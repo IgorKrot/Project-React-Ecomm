@@ -41,8 +41,3 @@ export default productSlice.reducer;
 
 
 
-
-
-   //  addProducts: (state, action) => {
-   //    state.items = action.payload;
-   //  },

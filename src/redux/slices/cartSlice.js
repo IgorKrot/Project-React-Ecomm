@@ -34,7 +34,7 @@ reducers: {
    },
    cartItemMinus: (state, action) => {
       const findItem = state.items.find((items) => items.id === action.payload.id);
-      state.totalCost = state.totalCost - findItem.price;
+      if (findItem.count !== 0) {state.totalCost = state.totalCost - findItem.price;}
       if (findItem.count !== 0) {findItem.count--;}
    },
 },
@@ -46,7 +46,3 @@ export default cartSlice.reducer;
 
 
 
-
-
-//   items: getDataFromLS(),
-//   totalCost: 0,

@@ -3,6 +3,15 @@
 	flex-wrap: wrap;
 	padding: 0 70px 0 70px;
    justify-content: center;
+   @media (min-width: 480px) and (max-width: 639px) {
+      padding: 0 40px 0 40px;
+      }
+   @media (min-width: 320px) and (max-width: 479px) {
+      padding: 0 30px 0 30px;
+   }
+   @media (max-width: 320px) {
+      padding: 0 30px 0 30px;
+   }
 }
 .product__card {
 	width: 260px;
@@ -16,15 +25,23 @@
    width: 400px;
    height: 650px;
    }
-   @media (max-width: 640px) {
-      width: 200px;
-	   height: 400px;
+   @media (min-width: 480px) and (max-width: 639px) {
+   width: 300px;
+	height: 500px;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+   width: 320px;
+	height: 500px;
+   }
+   @media (max-width: 320px) {
+      width: 320px;
+      height: 500px;
    }
 }
 .product__card__img {
 	height: 260px;
 	width: 260px;
-	background-image: url('../../assets/img/pizza1.png');
+	// background-image: url('../../assets/img/pizza1.png');
 	background-repeat: no-repeat;
 	background-size: contain;
    @media (min-width: 768px) and (max-width: 1024px) {
@@ -35,9 +52,19 @@
    height: 400px;
    width: 400px;
    }
-   @media (max-width: 640px) {
-      height: 200px;
-	   width: 200px;
+   @media (min-width: 480px) and (max-width: 639px) {
+      height: 300px;
+	   width: 300px;
+      margin: 0 0 0 5px;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      height: 320px;
+	   width: 320px;
+      margin: 0 0 0 5px;
+   }
+   @media (max-width: 320px) {
+      height: 320px;
+	   width: 320px;
       margin: 0 0 0 5px;
    }
 }
@@ -54,8 +81,14 @@
    @media (min-width: 640px) and (max-width: 768px) {
    font-size: 2.2em;
    }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
       font-size: 1.2em;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      font-size: 1.3em;
+   }
+   @media (max-width: 320px) {
+      font-size: 1.3em;
    }
 }
 .product__card__boxsetting {
@@ -72,7 +105,15 @@
       margin: 30px 0 0 0;
       height: 120px;
    }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
+      margin: 10px 0 0 0;
+      height: 86px;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      margin: 10px 0 0 0;
+      height: 86px;
+   }
+   @media (max-width: 320px) {
       margin: 10px 0 0 0;
       height: 86px;
    }
@@ -108,8 +149,20 @@
    width: 200px;
    height: 50px;
    }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
       font-size: 0.8em;
+      padding: 10px;;
+      height: 32px;
+	   width: 118px;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      font-size: 0.9em;
+      padding: 10px;;
+      height: 32px;
+	   width: 118px;
+   }
+   @media (max-width: 320px) {
+      font-size: 0.9em;
       padding: 10px;;
       height: 32px;
 	   width: 118px;
@@ -151,12 +204,26 @@
    height: 46px;
    margin: 3px 0 0 0;
    }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
       padding: 10px;
       margin: 2px 0 0 0;
 	   height: 32px;
 	   width: 78px;
       font-size: 0.8em;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      padding: 10px;
+      margin: 2px 0 0 0;
+	   height: 32px;
+	   width: 78px;
+      font-size: 0.9em; 
+   }
+   @media (max-width: 320px) {
+      padding: 10px;
+      margin: 2px 0 0 0;
+	   height: 32px;
+	   width: 78px;
+      font-size: 0.9em; 
    }
 }
 .product__card__size__text {}
@@ -170,7 +237,13 @@
    @media (min-width: 640px) and (max-width: 768px) {
       justify-content: center;
       }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
+      justify-content: center;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      justify-content: center;
+   }
+   @media (max-width: 320px) {
       justify-content: center;
    }
 }
@@ -191,8 +264,18 @@
    width: 100px;
    height: 25px;
    }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
       font-size: 1.1em;
+      height: 18px;
+	   width: 90px;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      font-size: 1.2em;
+      height: 18px;
+	   width: 90px;
+   }
+   @media (max-width: 320px) {
+      font-size: 1.2em;
       height: 18px;
 	   width: 90px;
    }
@@ -219,7 +302,15 @@
    height: 50px;
    padding: 5px 0 0 0;
    }
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
+      height: 40px;
+	   width: 155px;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      height: 40px;
+	   width: 155px;
+   }
+   @media (max-width: 320px) {
       height: 40px;
 	   width: 155px;
    }
@@ -248,9 +339,15 @@
 	width: 24px;
    background-color: #EB5A1E;
    border-radius: 50%;
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
    height: 20px;
 	width: 20px;
+   margin: 1px 0 0 0;
+   }
+   @media (max-width: 320px) {
+      height: 20px;
+      width: 20px;
+      margin: 1px 0 0 0;
    }
 }
 .button__text__round {
@@ -261,12 +358,24 @@
 	font-weight: 400;
 	text-align: center;
 	color: #FFFFFF;
-   @media (max-width: 640px) {
+   @media (min-width: 480px) and (max-width: 639px) {
       height: 20px;
       width: 20px;
       font-size: 1.1em;
       margin: 8px 0 10px 0;
       }
+   @media (min-width: 320px) and (max-width: 479px) {
+      height: 20px;
+      width: 20px;
+      font-size: 1.1em;
+      margin: 8px 0 10px 0;
+   }
+   @media (max-width: 320px) {
+      height: 20px;
+      width: 20px;
+      font-size: 1.1em;
+      margin: 8px 0 10px 0;
+   }
 }
 
 .activesetting {

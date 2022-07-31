@@ -33,6 +33,19 @@ export default Category;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React, { useState } from 'react';
 // import { useSelector, useDispatch } from 'react-redux'
 // import {setButtonIndex1, buttonIndex1 } from '../redux/slices/categorySlice'   

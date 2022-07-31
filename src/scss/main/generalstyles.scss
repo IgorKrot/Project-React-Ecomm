@@ -1,5 +1,4 @@
 @import "./stylenull.scss";
-@import "./fonts.scss";
 @import "../components/allcomponentsstyle.scss";
 
 body {
@@ -13,10 +12,18 @@ body {
 	max-width: 1500px;
 	margin: 0px auto;
 	padding: 50px;
-   @media (max-width: 639px) {
-      width: 250px;
+   @media (min-width: 480px) and (max-width: 639px) {
+      width: 480px;
       padding: 20px; 
-      }
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      width: 480px;
+      padding: 20px; 
+   }
+   @media (max-width: 320px) {
+      width: 480px;
+      padding: 20px; 
+   }
 }
 
 .content {
@@ -30,17 +37,29 @@ h1 {
    font-weight: 700;
    text-align: left;
    padding: 0 70px 0 70px;
-   height: 50px;
+   height: 30px;
    @media (min-width: 1024px) and (max-width: 1200px) {
    margin: 5px 0 0 0;
    }
    @media (min-width: 768px) and (max-width: 1024px) {
    margin: 8px 0 0 0;
    }
-   @media (max-width: 639px) {
+   @media (min-width: 480px) and (max-width: 639px) {
       font-size: 1.3em;
       margin: 10px auto;
       padding: 0;
       text-align: center;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      font-size: 1.3em;
+      margin: 20px auto 0 auto;
+      padding: 0;
+      text-align: center;  
+   }
+   @media (max-width: 320px) {
+      font-size: 1.3em;
+      margin: 20px auto 0 auto;
+      padding: 0;
+      text-align: center;  
    }
    }

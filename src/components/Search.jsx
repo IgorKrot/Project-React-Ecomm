@@ -23,7 +23,7 @@ function Search () {
    
    return (           
       <input 
-      placeholder='Pizza search' 
+      placeholder='Search' 
       className='header__search' 
       type="search" 
       value={value}
@@ -32,6 +32,22 @@ function Search () {
 }
 
 export default Search;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

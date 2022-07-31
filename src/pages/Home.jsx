@@ -17,6 +17,7 @@ function Home() {
    const buttonIndex = useSelector(state => state.filter.buttonIndex);
    const selectSort = useSelector(state => state.filter.selectSort);
    const currentPage = useSelector(state => state.filter.currentPage);
+   const categorylist = ["All", "Meat", "Vegetarian", "Cheese", "Mushroom"];
 
    const dispatch = useDispatch();
    const navigate = useNavigate();
@@ -67,7 +68,7 @@ function Home() {
                <Sort />
             </nav>
          </nav>
-         <h1>All pizza</h1>
+         <h1>{categorylist[buttonIndex]} pizza</h1>
          <main className="product__card__flex">
             {items.map((card, id) =>
             <Productcard {...card} key={card.id}/>)}

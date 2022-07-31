@@ -18,7 +18,7 @@ function Header() {
    <header className="header">
       <div className="header__flex">
          <div className="header__logo">
-            <Link to="/index.html">
+            <Link to="/">
                <div className="header__logo__container">
                   <div className="logo__img"></div>
                   <div className="logo__text">
