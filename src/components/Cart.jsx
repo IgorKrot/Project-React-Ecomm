@@ -63,7 +63,7 @@ function Cart() {
          </div>
          <div className="cart__footer">
             <button className="cart__footer__buttonback">
-               <Link to="/index.html">
+               <Link to="/">
                   <div className="cart__footer__buttonback__text">back</div>
                </Link>
             </button> 
