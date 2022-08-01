@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const fetchProducts = createAsyncThunk("product/fetchProductsStatus", async(params) => {
    const { buttonIndex, selectSort, searchQuery, currentPage} = params;
-   const { data } = await axios.get(`https://62bef7450bc9b1256164277e.mockapi.io/items?${buttonIndex >= 0 ? `category=${buttonIndex}` : ""}&${selectSort > 0 ? 'sortBy=price' : 'sortBy=rating'}&order=desc&${searchQuery ? `search=${searchQuery}` : ""}&page=${currentPage}&limit=8`);
+   const { data } = await axios.get(`https://62bef7450bc9b1256164277e.mockapi.io/items?${searchQuery === "" ? `category=${buttonIndex}` : ""}&${selectSort > 0 ? 'sortBy=price' : 'sortBy=rating'}&order=desc&page=${currentPage}&limit=8${searchQuery ? `&search=${searchQuery}` : ""} `);
    return data
 })
 
