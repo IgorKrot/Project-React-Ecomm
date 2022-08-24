@@ -26,7 +26,7 @@ function Productcard({id, imageUrl, name, types, size, price}) {
    };
 
    return (           
-      <article className="product__card">
+      <article className="product__card" data-testid="testproduct">
          <img className="product__card__img" src={imageUrl}></img>
          <div className="product__card__title">{name}</div>
          <div className="product__card__boxsetting">

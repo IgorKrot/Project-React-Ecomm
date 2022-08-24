@@ -10,7 +10,6 @@ import Thanksfororder from '../src/pages/Thanksfororder';
 
 
 function App() {
-
   return (
    <div className="App">
       <div className="wrapper">

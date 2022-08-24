@@ -33,7 +33,7 @@ const productSlice = createSlice({
    },
    },
 });
-
+// console.log(extraReducers);
 export const { } = productSlice.actions;
 
 export default productSlice.reducer;
