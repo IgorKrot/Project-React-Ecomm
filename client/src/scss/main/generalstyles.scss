@@ -1,0 +1,61 @@
+@import "./stylenull.scss";
+@import "../components/allcomponentsstyle.scss";
+
+body {
+	max-width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+	background-color: #FFDF8C;
+	max-width: 100%;
+	margin: 0px auto;
+	padding: 50px;
+   @media (min-width: 480px) and (max-width: 639px) {
+      padding: 20px; 
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      padding: 20px; 
+   }
+   @media (max-width: 320px) {
+      padding: 20px; 
+   }
+}
+
+.content {
+	max-width: 1400px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+}
+
+h1 {
+   font-size: 2em;
+   font-weight: 700;
+   text-align: left;
+   padding: 0 70px 0 70px;
+   height: 30px;
+   @media (min-width: 1024px) and (max-width: 1200px) {
+   margin: 5px 0 0 0;
+   }
+   @media (min-width: 768px) and (max-width: 1024px) {
+   margin: 8px 0 0 0;
+   }
+   @media (min-width: 480px) and (max-width: 639px) {
+      font-size: 1.3em;
+      margin: 10px auto;
+      padding: 0;
+      text-align: center;
+   }
+   @media (min-width: 320px) and (max-width: 479px) {
+      font-size: 1.3em;
+      margin: 20px auto 0 auto;
+      padding: 0;
+      text-align: center;  
+   }
+   @media (max-width: 320px) {
+      font-size: 1.3em;
+      margin: 20px auto 0 auto;
+      padding: 0;
+      text-align: center;  
+   }
+   }

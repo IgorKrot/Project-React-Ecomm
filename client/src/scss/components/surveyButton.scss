@@ -1,0 +1,21 @@
+.survey_button_main {
+   // width: 15%;
+   height: 33.6px;
+   background-color: #FE5F1E;
+   position: fixed;
+   bottom: 10px;
+   left: 10px;
+   padding: 8.4px 5px 8.4px 5px;
+   border-radius: 50% 20% / 10% 40%;
+   margin: 0 auto;
+   cursor: pointer;
+}
+
+.survey_button_content {
+   margin: 0 auto;
+}
+
+.survey_button_content_text {
+   text-align: center;
+   font-size: 1.2em;
+}

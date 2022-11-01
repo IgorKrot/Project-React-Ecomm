@@ -1,0 +1,76 @@
+.login_main {
+   position: absolute;
+   margin: 0 auto;
+   top: 0;
+   right: 20px;
+   width: 20%;
+   height: 3%;
+   @media (max-width: 768px) {
+      height: 3%;
+   }
+}
+.buttons_bLock_flex {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+}
+a {
+   width: 100%;
+}
+.button_left {
+   width: 100%;
+   height: 100%;
+   background-color: #FE5F1E;
+   border-bottom-left-radius: 50%;
+   cursor: pointer;
+}
+.button_left_text {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-size: 1.2em;
+   font-weight: 600;
+   @media (max-width: 768px) {
+      font-size: 1em;
+   }
+}
+.button_right {
+   width: 100%;
+   height: 100%;
+   background-color: #FE5F1E;
+   border-bottom-right-radius: 50%;
+   cursor: pointer;
+}
+.button_right_text {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-size: 1.2em;
+   font-weight: 600;
+   @media (max-width: 768px) {
+      font-size: 1em;
+   }
+}
+
+
+.buttons_bLock_flex_single {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+}
+.button_right_single {
+   width: 100%;
+   height: 100%;
+   background-color: #FE5F1E;
+   cursor: pointer;
+   border-radius: 0 0 10px 10px;
+}
+.button_right_text_single {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-size: 1.2em;
+   font-weight: 600;
+}
